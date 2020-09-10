@@ -1,0 +1,54 @@
+/* Karusell */
+
+.carousel {
+  margin-bottom: 50px;
+}
+
+.carousel-control-next, .carousel-control-prev {
+  background-color: var(--clr-primary-1);
+}
+
+.carousel-item {
+  height: 100vh;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.carousel-caption h1 {
+  font-weight: 600;
+  font-size: 4rem;
+  color: var(--clr-primary-2);
+  text-shadow: 1px 1px 1px white, 1px -1px 1px white, -1px 1px 1px white, -1px -1px 1px white;
+}
+
+.carousel-caption p {
+  font-weight: 600;
+  font-size: 2rem;
+  color: var(--clr-primary-2);
+  text-shadow: 1px 1px 1px white, 1px -1px 1px white, -1px 1px 1px white, -1px -1px 1px white;
+}
+
+.carousel-caption a {
+  text-transform: uppercase;
+  background: var(--clr-grey-2);
+  padding: 10px 30px;
+  display: inline-block;
+  text-decoration: none;
+  border: 3px solid var(--clr-white-1);
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: var(--clr-white-1);
+  transition: var(--transition);
+}
+
+.carousel-caption a:hover {
+  border-color: var(--clr-primary-1);
+  text-decoration: none;
+  background: var(--clr-grey-1);
+  color: var(--clr-primary-1);
+}
+
+#indicators {
+  background-color: var(--clr-primary-1);
+}

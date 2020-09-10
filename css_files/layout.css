@@ -1,0 +1,150 @@
+/* Webseiten anpassung */
+
+@media screen and (max-width: 1100px) {
+  p {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .calculator {
+    grid-template-areas: "calcgrid" "calctext";
+    grid-template-columns: 1fr;
+  }
+  .calcgrid {
+    grid-column: 1;
+  }
+  .calctext {
+    grid-column: 1;
+  }
+  .übergrid {
+    grid-template-areas: "portrait" "metext";
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 3fr;
+  }
+  .portrait {
+    grid-row: 1;
+  }
+  .metext {
+    grid-row: 2;
+  }
+  .meportrait {
+    padding: 10px;
+  }
+  .kongrid {
+    grid-template-areas: "email" "telefon";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .email a {
+    grid-row: 1;
+  }
+  .telefon a {
+    grid-row: 2;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  body {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  nav {
+    position: absolute;
+    height: 0%;
+    width: 0%;
+    opacity: 0%;
+    cursor: default;
+    pointer-events: none;
+    text-decoration: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  p {
+    font-size: 1.25rem;
+  }
+  .carousel-item {
+    height: 70vh;
+  }
+  .carousel-caption h1 {
+    font-size: 2.5rem;
+  }
+  .carousel-caption p {
+    font-size: 1.5rem;
+  }
+  .carousel-caption a {
+    font-size: 1.25rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .carousel-item {
+    height: 60vh;
+  }
+  .carousel-caption h1 {
+    font-size: 2rem;
+  }
+  .carousel-caption p {
+    font-size: 1.25rem;
+  }
+  .carousel-caption a {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .email a {
+    font-size: 1.25rem;
+  }
+  .telefon a {
+    font-size: 1.25rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+  .carousel-item {
+    height: 50vh;
+  }
+  .carousel-caption h1 {
+    font-size: 1.5rem;
+  }
+  .carousel-caption p {
+    font-size: 1rem;
+  }
+  .carousel-caption a {
+    font-size: 0.75rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .email a {
+    font-size: 0.85rem;
+  }
+  .telefon a {
+    font-size: 0.85rem;
+  }
+  .calculator-grid {
+    grid-template-columns: repeat(4, 4.25rem);
+    grid-template-rows: minmax(4.25rem, auto) repeat(5, 4.25rem);
+  }
+  p {
+    font-size: 1rem;
+  }
+  h3 {
+    font-size: 1.5rem !important;
+  }
+  h4 {
+    font-size: 1.25rem !important;
+  }
+  .carousel-item {
+    height: 35vh;
+  }
+  .carousel-caption h1 {
+    font-size: 1.4rem;
+  }
+  .carousel-caption p {
+    font-size: 0.9rem;
+  }
+  .carousel-caption a {
+    font-size: 0.5rem;
+  }
+}

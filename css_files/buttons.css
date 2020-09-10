@@ -1,0 +1,97 @@
+/* Knöpfe von der Navigationsleist */
+
+ul {
+    list-style-type: none;
+  }
+  
+  .links a {
+    text-decoration: none;
+    border-bottom: 3px solid var(--clr-white-1);
+    font-weight: 600;
+    display: block;
+    font-size: 1.5rem;
+    padding: 1rem 1.5rem;
+    color: var(--clr-white-1);
+    transition: var(--transition);
+  }
+  
+  .links a:hover {
+    border-color: var(--clr-primary-1);
+    text-decoration: none;
+    background: var(--clr-grey-1);
+    color: var(--clr-primary-1);
+    padding-left: 2rem;
+  }
+  
+  /* Email und Telefon Knopf */
+  
+  .email a {
+    margin: 0px 10px 10px 10px;
+    grid-column: 1;
+    grid-row: 1;
+    grid-area: email;
+    background: var(--clr-grey-2);
+    padding: 10px 30px;
+    text-decoration: none;
+    border: 3px solid var(--clr-white-1);
+    font-size: 1.5rem;
+    color: var(--clr-white-1);
+    transition: var(--transition);
+    display: block;
+    text-align: center;
+  }
+  
+  .email a:hover {
+    border-color: var(--clr-primary-1);
+    text-decoration: none;
+    background: var(--clr-grey-1);
+    color: var(--clr-primary-1);
+  }
+  
+  .telefon a {
+    margin: 0px 10px 10px 10px;
+    align-content: right;
+    grid-column: 2;
+    grid-row: 1;
+    grid-area: telefon;
+    background: var(--clr-grey-2);
+    padding: 10px 30px;
+    text-decoration: none;
+    border: 3px solid var(--clr-white-1);
+    font-size: 1.5rem;
+    color: var(--clr-white-1);
+    transition: var(--transition);
+    display: block;
+    text-align: center;
+  }
+  
+  .telefon a:hover {
+    border-color: var(--clr-primary-1);
+    text-decoration: none;
+    background: var(--clr-grey-1);
+    color: var(--clr-primary-1);
+  }
+  
+  /* Knopf zum nach oben gelangen */
+  
+  .totopbtn a {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background-color: var(--clr-black-1);
+    bottom: 40px;
+    right: 50px;
+    text-decoration: none;
+    text-align: center;
+    color: var(--clr-white-1);
+    font-size: 30px;
+    border: 3px solid var(--clr-white-1);
+    opacity: 0.7;
+  }
+  
+  .totopbtn a:hover {
+    border-color: var(--clr-primary-1);
+    text-decoration: none;
+    background: var(--clr-grey-1);
+    color: var(--clr-primary-1);
+  }

@@ -1,0 +1,178 @@
+/* farben, und Übergänge*/
+:root {
+  --clr-black-1: hsl(0, 0%, 0%);
+  --clr-white-1: hsl(0, 0%, 100%);
+  --clr-primary-1: hsl(193, 91%, 34%);
+  --clr-primary-2: hsl(193, 90%, 28%);
+  --clr-primary-3: hsl(212, 100%, 50%);
+  --clr-secondary-1: hsl(0, 100%, 50%);
+  --clr-secondary-2: hsl(51, 100%, 50%);
+  --clr-grey-1: hsl(240, 7%, 16%);
+  --clr-grey-2: hsl(240, 6%, 13%);
+  --transition: all 0.2s linear;
+}
+
+*, ::after, ::before {
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 305px 1fr;
+  grid-template-rows: auto auto;
+  min-height: 100vh;
+  height: fit-content;
+}
+
+/* Navigationsleiste */
+
+.all {
+  background-color: var(--clr-black-1);
+}
+
+nav {
+  background-color: var(--clr-grey-2);
+  color: var(--clr-white-1);
+  padding: 0px;
+  width: 305px;
+  position: fixed;
+  height: 100vh;
+  box-shadow: 5px 0 7px -7px rgb(255, 255, 255);
+}
+
+#navgrid {
+  grid-column: 1;
+  grid-row: auto auto;
+}
+
+.logo {
+  padding: 10px;
+  width: 305px;
+  text-align: center;
+  border-bottom: 3px solid var(--clr-primary-1);
+}
+
+/* Angepasser Scrollbar */
+
+::-webkit-scrollbar {
+  width: 17px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--clr-black-1);
+  border: 2px solid var(--clr-white-1);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--clr-primary-1);
+  border: 3px solid var(--clr-white-1);
+  border-radius: 10px;
+}
+
+/* Über mich Teil */
+
+.übermich {
+  margin-bottom: 50px;
+}
+
+.übergrid {
+  display: grid;
+  grid-template-columns: 2fr 6fr;
+  grid-template-rows: 1fr;
+}
+
+.portrait {
+  grid-column: 1;
+  grid-row: 1;
+  grid-area: porträt;
+}
+
+.meportrait {
+  padding-top: 10px;
+  padding-left: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
+
+.metext {
+  grid-column: 2;
+  grid-row: 1;
+  grid-area: metext;
+}
+
+/* Projekt Teil */
+
+.projekt {
+  margin-bottom: 50px;
+}
+
+/* Ausbildung Teil */
+
+.ausbildung {
+  margin-bottom: 50px;
+}
+
+/* Kontakt Teil */
+
+.kontakt {
+  margin-bottom: 50px;
+}
+
+.kongrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+/* Footer Teil */
+
+.footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+/* Schriftarten */
+
+p {
+  color: var(--clr-white-1);
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
+
+h3 {
+  color: var(--clr-white-1);
+  border: 3px solid var(--clr-white-1);
+  text-align: center;
+  background-color: var(--clr-primary-1);
+  padding: 10px;
+}
+
+h4 {
+  color: var(--clr-white-1);
+  text-decoration: underline;
+  padding: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+h5 {
+  color: var(--clr-secondary-1);
+  padding-top: 20px;
+  padding-left: 5px;
+  padding-right: 5px;
+  text-align: center;
+  font-style: oblique;
+  text-decoration: underline;
+}
