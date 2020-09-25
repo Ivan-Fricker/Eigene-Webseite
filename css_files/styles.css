@@ -1,4 +1,5 @@
 /* farben, und Übergänge*/
+
 :root {
   --clr-black-1: hsl(0, 0%, 0%);
   --clr-white-1: hsl(0, 0%, 100%);
@@ -111,6 +112,32 @@ nav {
 
 .projekt {
   margin-bottom: 50px;
+}
+
+.abgrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.abschreibung {
+  grid-column: 1;
+  grid-row: 1;
+  grid-area: porträt;
+}
+
+.abbild {
+  padding: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+
+.abtext {
+  grid-column: 2;
+  grid-row: 1;
+  grid-area: metext;
 }
 
 /* Ausbildung Teil */
