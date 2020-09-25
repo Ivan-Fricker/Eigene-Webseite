@@ -1,4 +1,20 @@
 /* Webseiten anpassung */
+@media screen and (max-width: 1300px) {
+  .abgrid {
+    grid-template-areas: "portrait" "metext";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+  }
+  .abschreibung {
+    grid-row: 1;
+  }
+  .abtext {
+    grid-row: 2;
+  }
+  .meportrait {
+    padding: 10px;
+  }
+}
 
 @media screen and (max-width: 1100px) {
   p {
@@ -18,7 +34,7 @@
   .übergrid {
     grid-template-areas: "portrait" "metext";
     grid-template-columns: 1fr;
-    grid-template-rows: 2fr 3fr;
+    grid-template-rows: auto auto;
   }
   .portrait {
     grid-row: 1;
@@ -66,7 +82,7 @@
     height: 70vh;
   }
   .carousel-caption h1 {
-    font-size: 2.5rem;
+    font-size: 1.75rem;
   }
   .carousel-caption p {
     font-size: 1.5rem;
@@ -81,7 +97,7 @@
     height: 60vh;
   }
   .carousel-caption h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .carousel-caption p {
     font-size: 1.25rem;
@@ -146,5 +162,8 @@
   }
   .carousel-caption a {
     font-size: 0.5rem;
+  }
+  .abschreibung {
+    width: 300px;
   }
 }
